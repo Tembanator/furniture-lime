@@ -12,10 +12,12 @@ export default function SliderComponent() {
     var settings = {
         dots: false,
         infinite: true,
-        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        autoplay: true,
+        speed: 3000,
+        autoplaySpeed: 5000,
     };
 
 
