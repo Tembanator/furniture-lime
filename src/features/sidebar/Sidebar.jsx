@@ -24,7 +24,7 @@ export default function Sidebar() {
     }
     const listName = list === 'cart' ? 'Cart' : 'Wishlist'
     return (
-        <div className="flex w-full h-svh z-10 fixed right-0 left-0 top-0">
+        <div className="flex w-full h-dvh z-10 fixed right-0 left-0 top-0 bottom-0">
             <div className="bg-gray-400 backdrop-filter backdrop-blur-sm bg-opacity-10 flex-auto"></div>
             <div className="bg-gray-50 min-w-96 overflow-y-scroll">
                 <div className="flex justify-between items-center h-20 p-3 shadow-sm">
