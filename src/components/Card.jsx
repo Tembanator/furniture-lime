@@ -37,7 +37,7 @@ export default function Card({ product }) {
     }
 
     return (
-        <div>
+        <div className="p-2">
             <div className="relative group overflow-hidden">
                 <img
                     className="aspect-video object-cover w-full"
