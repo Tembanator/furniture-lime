@@ -3,7 +3,7 @@ import BottomLink from "./BottomLink";
 
 export default function BottomNav() {
     return (
-        <div className="shadow flex items-center justify-between px-12 py-4 fixed bottom-0 w-full sm:hidden bg-white">
+        <div className="shadow flex items-center justify-between px-12 py-4 fixed bottom-0 w-full sm:hidden bg-white z-20">
             <BottomLink icon={<FiHome />} destination='/' />
             <BottomLink icon={<FiShoppingBag />} destination='/shop' />
             <BottomLink icon={<FiShoppingCart />} destination='/cart' />
