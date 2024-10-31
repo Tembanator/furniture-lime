@@ -5,7 +5,11 @@ import PrimaryButton from "./PrimaryButton"
 import { useDispatch, useSelector } from "react-redux"
 import { addItem, getIfInCart } from '../features/cart/cartSlice'
 import { addWishListItem, getIfInWishlist } from "../features/wishlist/wishlistSlice"
+import { useState } from "react"
 export default function Card({ product }) {
+
+    const [error, setError] = useState(false)
+    const [loading, setLoading] = useState(false)
 
     const dispatch = useDispatch()
 
@@ -41,7 +45,7 @@ export default function Card({ product }) {
             <div className="relative group overflow-hidden">
                 <img
                     className="aspect-video object-cover w-full"
-                    src={getImageURL(image)} alt={name} />
+                    src={error ? "https://placehold.co/600x400?text=Image\n+not+Found" : loading ? "https://placehold.co/600x400?text=loading..." : getImageURL(image)} alt={name} />
                 <div className="flex flex-col space-y-2 justify-start w-10 items-center absolute top-0 right-0 py-4 opacity-1 translate-x-10 group-hover:translate-x-0 duration-300">
                     <NavButton isInWishlist={isInWishlist} onClick={handleAddToWishlist} icon={<FiHeart size={15} />} withPill={false} />
                     {/* <NavButton icon={<FiEye size={15} />} withPill={false} /> */}

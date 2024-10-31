@@ -29,7 +29,7 @@ export default function Shop() {
     }
     return (
         <Container>
-            <div className="md:container mx-auto py-12">
+            <div className="md:container mx-auto py-12 p-4">
                 <Filter onSort={handleSort} />
                 <DisplayGrid products={sortedProducts} />
             </div>
