@@ -28,7 +28,7 @@ export default function Sidebar() {
             <div className="bg-gray-400 backdrop-filter backdrop-blur-sm bg-opacity-10 flex-auto"></div>
             <div className="bg-gray-50 min-w-96 overflow-y-scroll">
                 <div className="flex justify-between items-center h-20 p-3 shadow-sm">
-                    <h2 className="text-xl font-medium">My Wishlist</h2>
+                    <h2 className="text-xl font-medium">{listName}</h2>
                     <FiX onClick={handleClick} className="text-2xl cursor-pointer hover:scale-105" />
                 </div>
                 {itemsLength > 0 ? <div className="p-2 flex flex-col space-y-3">
